@@ -90,6 +90,10 @@ module CurationConcerns
       generate 'curation_concerns:assets' unless options[:'skip-assets']
     end
 
+    def noid_install
+      generate 'active_fedora:noid:install'
+    end
+
     def add_helper
       copy_file 'curation_concerns_helper.rb', 'app/helpers/curation_concerns_helper.rb'
     end
