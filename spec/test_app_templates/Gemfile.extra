@@ -1,5 +1,7 @@
 # placeholder to use for pinning against specific gem commit references
 
+gem 'active_fedora-noid', github: 'projecthydra-labs/active_fedora-noid', branch: 'alignment_and_configuration'
+
 if ENV['RDF_VERSION']
   gem 'rdf', ENV['RDF_VERSION']
 end
