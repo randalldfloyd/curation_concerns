@@ -11,8 +11,6 @@ group :development, :test do
   gem 'pry-byebug' unless ENV['CI']
 end
 
-gem 'active_fedora-noid', github: 'projecthydra-labs/active_fedora-noid', branch: 'alignment_and_configuration', ref: '6ca6959c91d34cfc8627b5b21f52f52d779dd43c'
-
 # BEGIN ENGINE_CART BLOCK
 # engine_cart: 0.10.0
 # engine_cart stanza: 0.10.0
