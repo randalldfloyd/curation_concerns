@@ -293,4 +293,13 @@ describe CurationConcerns::GenericWorksController do
       expect(assigns(:presenter)).not_to be_blank
     end
   end
+
+  describe '#inspect_work' do
+    let(:work) { create(:private_generic_work, user: user) }
+    it "is successful" do
+      get :inspect_work, params: { id: work.id }
+      expect(response).to be_success
+      expect(assigns(:presenter)).not_to be_blank
+    end
+  end
 end
